@@ -27,9 +27,13 @@ class BooksController < ApplicationController
   end
 
   def update
-    book =  Book.find(params[:id])
-    book.update(book_params)
-    redirect_to book_path(book)
+     book =  Book.find(params[:id])
+    if book.update(book_params)
+       redirect_to book_path(book)
+    else
+      redirect_to edit_book_path(book)
+      flash[:errors_msgs] = book.errors.full_messages
+    end
   end
 
   def destroy
