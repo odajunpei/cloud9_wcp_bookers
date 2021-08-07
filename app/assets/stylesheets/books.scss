@@ -51,9 +51,10 @@ th {
 }
 
 tbody {
-    display: table-row-group;
+    display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
+    text-align: center;
 }
 
 td {
@@ -146,11 +147,23 @@ input[type="hidden" i] {
     border: initial;
 }
 
-#error_explanation {
-    width: 450px;
-    border: 2px solid red;
-    padding: 7px;
-    padding-bottom: 0;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+div {
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+strong {
+    font-weight: bold;
 }
