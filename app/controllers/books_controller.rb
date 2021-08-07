@@ -10,10 +10,8 @@ class BooksController < ApplicationController
     if @book.save
       redirect_to book_path(@book.id)
     else
-      
       flash[:errors_msgs] = @book.errors.full_messages
       redirect_to books_path
-   
     end
   end
 
@@ -31,8 +29,8 @@ class BooksController < ApplicationController
     if book.update(book_params)
        redirect_to book_path(book)
     else
-      redirect_to edit_book_path(book)
       flash[:errors_msgs] = book.errors.full_messages
+      redirect_to edit_book_path(book)
     end
   end
 

@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  background-color: #fff;
+    width: 100%;
+    background-color: #fff;
     color: #333;
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
@@ -25,3 +26,11 @@ h1 {
 strong {
     font-weight: bold;
 }
+
+p{
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
